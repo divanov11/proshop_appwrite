@@ -10,6 +10,7 @@ const envConfig = {
     tableIdProducts: process.env.APPWRITE_TABLE_ID_PRODUCTS,
 };
 
+console.log("ENV CONFIG:", envConfig.endpoint);
 client.setEndpoint(envConfig.endpoint);
 client.setProject(envConfig.project);
 client.setKey(envConfig.key);
